@@ -1,7 +1,6 @@
 # import modules
 import os
 import statistics
-import csv
 
 # Path to the election CSV file, output folder for election results text file
 csv_file_path = os.path.join('Resources', 'election_data.csv')
@@ -51,5 +50,5 @@ print("-------------------------")
 
 # Export results to text file
 output_folder = 'analysis'
-output_file_path = os.path.join(output_folder, 'election_results.txt')
+output_file_path = os.path.join(output_folder, 'election_analysis.txt')
 
