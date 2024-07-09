@@ -17,6 +17,7 @@ This Python script analyzes financial records from a dataset (budget_data.csv). 
 **Usage**
 1. Ensure the dataset file (budget_data.csv) is in the same directory as the script.
 2. Run the script: python main-Bank.py
+  
 **Output**
 - The results are displayed in the terminal.
 - The results are saved in a text file named 'financial_analysis.txt' in the 'analysis' folder.
@@ -36,6 +37,7 @@ This Python script helps a small, rural town modernize its vote-counting process
 1. Ensure the dataset file (election_data.csv) is in the same directory as the script.
 2. Run the script: python main-Poll.py
 3. When prompted, enter yes or no to choose whether to display the election results.
+
 **Output**
 - The results are displayed in the terminal if the user chooses to see them.
 - The results are saved in a text file named 'election_results.txt' in the 'analysis' folder if the user opts to display the results.
