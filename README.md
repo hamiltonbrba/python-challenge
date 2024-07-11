@@ -36,8 +36,27 @@ This Python script helps a small, rural town modernize its vote-counting process
 **Usage**
 1. Ensure the dataset file (election_data.csv) is in the same directory as the script.
 2. Run the script: python main-Poll.py
-3. When prompted, enter yes or no to choose whether to display the election results.
 
 **Output**
 - The results are displayed in the terminal if the user chooses to see them.
 - The results are saved in a text file named 'election_results.txt' in the 'analysis' folder if the user opts to display the results.
+
+## CREDIBILITY
+
+This project was developed with the assistance of Xpert Learning Assistant, Material covered in the UNC Data Analytics Bootcamp Course and ChatGPT's OpenAI. 
+
+## EDITS
+
+**Code Efficiency Improvements**
+
+Overview:
+
+I identified code inefficienies within the the print and file write operations for the results for both files. This enhanced the financial analysis code for better readability and performance.
+
+**Key Changes**
+
+- String Consolidation - Combined all print and file write operations into a single formatted string variable, 'analysis'.
+
+- Reduced I/O Operations - Minimized the number of 'print' and 'file.write' calls, improving performance.
+
+- Improved Readability - Centralized formatting logic, making the code easier to understand and maintain.
