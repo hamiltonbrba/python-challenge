@@ -45,6 +45,10 @@ This Python script helps a small, rural town modernize its vote-counting process
 
 This project was developed with the assistance of Xpert Learning Assistant, Material covered in the UNC Data Analytics Bootcamp Course and ChatGPT's OpenAI. 
 
+## IMAGES
+
+Included screenshots of before & after of code efficiencies
+
 ## EDITS
 
 **Code Efficiency Improvements**
