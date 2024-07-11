@@ -53,8 +53,8 @@ Enhanced the financial analysis code for better readability and performance.
 
 **Key Changes**
 
-String Consolidation - Combined all print and file write operations into a single formatted string variable, analysis.
+- String Consolidation - Combined all print and file write operations into a single formatted string variable, 'analysis'.
 
-Reduced I/O Operations - Minimized the number of print and file.write calls, improving performance.
+- Reduced I/O Operations - Minimized the number of 'print' and 'file.write' calls, improving performance.
 
-Improved Readability - Centralized formatting logic, making the code easier to understand and maintain.
+- Improved Readability - Centralized formatting logic, making the code easier to understand and maintain.
