@@ -46,18 +46,18 @@ This Python script helps a small, rural town modernize its vote-counting process
 
 
 **Code Efficiency Improvements**
+
 Overview:
+
 Enhanced the financial analysis code for better readability and performance.
 
-Key Changes:
+**Key Changes**
 
-String Consolidation:
-
+String Consolidation: 
 Combined all print and file write operations into a single formatted string variable, analysis.
 
-Reduced I/O Operations:
-
+Reduced I/O Operations: 
 Minimized the number of print and file.write calls, improving performance.
 
-Improved Readability:
+Improved Readability: 
 Centralized formatting logic, making the code easier to understand and maintain.
