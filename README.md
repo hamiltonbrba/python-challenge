@@ -41,14 +41,17 @@ This Python script helps a small, rural town modernize its vote-counting process
 - The results are displayed in the terminal if the user chooses to see them.
 - The results are saved in a text file named 'election_results.txt' in the 'analysis' folder if the user opts to display the results.
 
-## EDITS
+## CREDIBILITY
 
+This project was developed with the assistance of Xpert Learning Assistant, Material covered in the UNC Data Analytics Bootcamp Course and ChatGPT's OpenAI. 
+
+## EDITS
 
 **Code Efficiency Improvements**
 
 Overview:
 
-Enhanced the financial analysis code for better readability and performance.
+I identified code inefficienies within the the print and file write operations for the results for both files. This enhanced the financial analysis code for better readability and performance.
 
 **Key Changes**
 
