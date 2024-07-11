@@ -49,21 +49,19 @@ greatest_dec = min(changes)
 greatest_inc_month = months[changes.index(greatest_inc)]
 greatest_dec_month = months[changes.index(greatest_dec)]
 
-# Print Results with formatting considerations
-print("Financial Analysis")
-print("----------------------------")
-print(f"Total Months: {total_months}")
-print(f"Total: ${net_total}")
-print(f"Average Change: ${average_change:.2f}")
-print(f"Greatest Increase in Profits: {greatest_inc_month} (${greatest_inc})")
-print(f"Greatest Decrease in Profits: {greatest_dec_month} (${greatest_dec})")
+# Create the analysis String
+analysis = (
+    "Financial Analysis\n"
+    "----------------------------\n"
+    f"Total Months: {total_months}\n"
+    f"Total: ${net_total}\n"
+    f"Average Change: ${average_change:.2f}\n"
+    f"Greatest Increase in Profits: {greatest_inc_month} (${greatest_inc})\n"
+    f"Greatest Decrease in Profits: {greatest_dec_month} (${greatest_dec})\n"
+)
+# Print Results
+print(analysis)
 
 # Export results to text file
 with open(output_file_path, 'w') as file:
-    file.write("Financial Analysis\n")
-    file.write("----------------------------\n")
-    file.write(f"Total Months: {total_months}\n")
-    file.write(f"Total: ${net_total}\n")
-    file.write(f"Average Change: ${average_change:.2f}\n")
-    file.write(f"Greatest Increase in Profits: {greatest_inc_month} (${greatest_inc})\n")
-    file.write(f"Greatest Decrease in Profits: {greatest_dec_month} (${greatest_dec})\n")
+    file.write(analysis)

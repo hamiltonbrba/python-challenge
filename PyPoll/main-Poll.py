@@ -38,27 +38,26 @@ percent_votes_per_candidate = {candidate: (votes / total_votes) * 100 for candid
 # Winner of the election based on popular vote
 winner = max(votes_per_candidate, key=votes_per_candidate.get)
 
-# Print Results
-print("Election Results")
-print("-------------------------")
-print(f"Total Votes: {total_votes}")
-print("-------------------------")
+# Create the results string
+results = (
+    "Election Results\n"
+    "-------------------------\n"
+    f"Total Votes: {total_votes}\n"
+    "-------------------------\n"
+)
 for candidate, votes in votes_per_candidate.items():
-    print(f"{candidate}: {percent_votes_per_candidate[candidate]:.3f}% ({votes})")
-print("-------------------------")
-print(f"Winner: {winner}")
-print("-------------------------")
+    results += f"{candidate}: {percent_votes_per_candidate[candidate]:.3f}% ({votes})\n"
+results += (
+    "-------------------------\n"
+    f"Winner: {winner}\n"
+    "-------------------------\n"
+)
+
+# Print Results
+print(results)
 
 # Export results to text file
 with open(output_file_path, 'w') as file:
-    file.write("Election Results\n")
-    file.write("-------------------------\n")
-    file.write(f"Total Votes: {total_votes}\n")
-    file.write("-------------------------\n")
-    for candidate, votes in votes_per_candidate.items():
-        file.write(f"{candidate}: {percent_votes_per_candidate[candidate]:.3f}% ({votes})\n")
-    file.write("-------------------------\n")
-    file.write(f"Winner: {winner}\n")
-    file.write("-------------------------\n")
+    file.write(results)
 
 
